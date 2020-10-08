@@ -8,6 +8,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .topbar {
@@ -55,4 +56,16 @@ body {
 
 .otherapps:hover {
   opacity: 0.75;
+}
+
+.maincontent {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottombar {
+  height: 50px;
+  background-color: #f2f2f2;
 }
