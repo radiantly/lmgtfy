@@ -1,0 +1,25 @@
+name: Demo
+on:
+  push:
+    branches: [master]
+
+jobs:
+  demo:
+    name: Generate demo image
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: "14"
+      - run: |
+          cd demo
+          npm ci
+          npm start
+      - name: Push demo image
+        run: |
+          git config --local user.email "github-action@github.com"
+          git config --local user.name "GitHub Actions"
+          git add .
+          git commit -m "Add demo image"
+          git push "https://${{ github.token }}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:demo --force
