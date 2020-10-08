@@ -1,0 +1,58 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  padding: 15px 30px;
+  align-self: flex-end;
+  display: flex;
+  justify-content: row;
+  height: 30px;
+}
+
+.topbar a {
+  color: #333;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+.topbar a:hover {
+  color: #555;
+  text-decoration: underline;
+}
+
+.signinbtn {
+  outline: none;
+  background-color: #4285f4;
+  font-weight: 800;
+  color: white;
+  height: 30px;
+  padding: 0 15px;
+  border-radius: 3px;
+  border: none;
+}
+
+.otherapps {
+  background-image: url(otherapps.png);
+  background-size: 528px 68px;
+  height: 30px;
+  width: 30px;
+  background-position: -132px -38px;
+  opacity: .55;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.otherapps:hover {
+  opacity: 0.75;
+}
