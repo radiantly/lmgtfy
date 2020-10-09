@@ -22,4 +22,4 @@ jobs:
           git config --local user.name "GitHub Actions"
           git add .
           git commit -m "Add demo image"
-          git push "https://${{ github.token }}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:demo --force
+          git push "https://${{ github.token }}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:gh-pages --force

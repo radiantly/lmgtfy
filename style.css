@@ -68,6 +68,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  padding: 15px;
 }
 
 .inputgroup {
@@ -120,6 +121,40 @@ body {
 .bottombar {
   height: 50px;
   background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.bottombar .group {
+  display: flex;
+  gap: 20px;
+  height: 100%;
+  align-items: center;
+}
+
+.bottombar .group > div {
+  color: #444;
+  cursor: pointer;
+}
+
+.bottombar .group > div:hover {
+  color: #555;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 660px) {
+  .topbar {
+    padding: 15px;
+  }
+  .bottombar {
+    justify-content: space-around;
+  }
+  .bottombar .group:first-child {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1200px) {
