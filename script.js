@@ -3,14 +3,17 @@
   const searchbtn = document.querySelector(".googlesearch");
   const sleep = (time) => new Promise((resolve) => setTimeout(resolve, time));
   const type = async (text) => {
+    searchbox.value = "";
+    searchbox.focus();
     for (const letter of text) {
       searchbox.value += letter;
+      searchbox.selectionStart = searchbox.selectionEnd = searchbox.value.length;
       await sleep(125 + Math.floor(Math.random() * 50));
     }
     await sleep(300);
   };
   if (location.hash?.length > 1) {
-    const query = atob(location.hash.substr(1));
+    const query = atob(location.hash.substring(1));
     await type(query);
     location.replace(
       `https://google.com/search?q=${encodeURIComponent(query)}`

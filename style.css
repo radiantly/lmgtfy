@@ -85,6 +85,9 @@ body {
   display: flex;
   align-items: center;
 }
+.inputgroup:hover {
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
 .inputgroup img {
   margin: 0 15px;
 }
@@ -158,12 +161,11 @@ body {
 }
 
 .bottombar .group > div {
-  color: #444;
+  color: #666;
   cursor: pointer;
 }
 
 .bottombar .group > div:hover {
-  color: #555;
   text-decoration: underline;
 }
 
