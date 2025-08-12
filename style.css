@@ -21,15 +21,14 @@ body {
   padding: 15px 30px;
   align-self: flex-end;
   display: flex;
-  justify-content: row;
-  height: 30px;
+  align-items: center;
+  gap: 15px;
 }
 
 .topbar .link {
   color: #333;
   line-height: 30px;
   font-size: 14px;
-  margin-left: 15px;
   cursor: pointer;
 }
 
@@ -38,33 +37,39 @@ body {
   text-decoration: underline;
 }
 
+.otherapps {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+}
+
+.otherapps:hover {
+  background-color: #ddd;
+}
+
+.otherapps img {
+  width: 24px;
+  height: 24px;
+}
+
 .signinbtn {
   outline: none;
-  background-color: #4285f4;
-  font-weight: 800;
+  background-color: #0b57d0;
   color: white;
-  height: 30px;
-  padding: 0 15px;
-  border-radius: 3px;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 20px;
   border: none;
 }
 .signinbtn:active {
   background-color: #1b71fc;
-}
-
-.otherapps {
-  background-image: url(otherapps.png);
-  background-size: 528px 68px;
-  height: 30px;
-  width: 30px;
-  background-position: -132px -38px;
-  opacity: 0.55;
-  margin: 0 15px;
-  cursor: pointer;
-}
-
-.otherapps:hover {
-  opacity: 0.75;
 }
 
 .maincontent {
@@ -103,12 +108,13 @@ body {
 .searchinput {
   flex-grow: 1;
   outline: none;
-  height: 100%;
+  align-self: stretch;
   padding: 2px 0;
   border: none;
   color: rgba(0, 0, 0, 0.87);
   background-color: rgba(0, 0, 0, 0);
   font-size: 16px;
+  min-width: 0;
 }
 
 .searchbtngroup {
