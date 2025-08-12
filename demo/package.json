@@ -1,8 +1,9 @@
 {
   "name": "google-homepage-demo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Captures a screenshot of the page",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +11,6 @@
   "author": "radiantly",
   "license": "MIT",
   "dependencies": {
-    "puppeteer": "^5.3.1"
+    "puppeteer": "^24.16.1"
   }
 }
