@@ -4,7 +4,7 @@ This was originally a recreation of the google homepage using basic HTML and CSS
 
 ## How to use
 
-Visit https://radiantly.github.io/lmgtfy and type the text you're googling for your friend. Click *Copy Link* and send the link over :)
+Visit https://lmgtf.you and type the text you're googling for your friend. Click _Copy Link_ and send the link over :)
 
 ## Demo
 

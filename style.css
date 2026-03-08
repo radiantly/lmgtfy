@@ -54,11 +54,6 @@ body {
   background-color: #ddd;
 }
 
-.otherapps img {
-  width: 24px;
-  height: 24px;
-}
-
 .signinbtn {
   outline: none;
   background-color: #0b57d0;
@@ -93,14 +88,13 @@ body {
 .inputgroup:hover {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }
-.inputgroup img {
+.inputgroup svg {
   margin: 0 15px;
 }
 .search-icon {
   height: 20px;
   opacity: 0.4;
 }
-
 .voice-icon {
   height: 24px;
 }
@@ -124,25 +118,28 @@ body {
 
 .searchbtngroup button {
   outline: none;
-  background-color: #f2f2f2;
-  border-radius: 4px;
-  padding: 10px 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 9px 15px;
   border: 1px solid white;
   color: #5f6368;
   font-size: 14px;
 }
 
 .searchbtngroup button:hover {
-  background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+  background-image: linear-gradient(top, #fbfbfb, #f4f4f4);
   filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
   border: 1px solid #ccc;
   color: #333;
   cursor: pointer;
-  background-color: #f8f8f8;
 }
 
 .searchbtngroup button:focus {
   border: 1px solid #4285f4;
+}
+
+.gsearch::before {
+  content: "Goo";
 }
 
 .flexible-space {
